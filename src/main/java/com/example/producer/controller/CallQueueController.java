@@ -17,7 +17,7 @@ public class CallQueueController {
 
     @GetMapping()
     public HttpStatus callPushMessage(@RequestParam String msg) {
-        // Push message queue for mearning
+        // Push message queue for learning
         pushMessageQueue.pushMessageQueue(msg);
         return HttpStatus.OK;
     }
